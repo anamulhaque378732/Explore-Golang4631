@@ -26,18 +26,33 @@ func main() {
 	// string
 	// */
 
+	// variable declaration in a block
+	var (
+		aaa int
+		baa int    = 1
+		caa string = "Hello"
+	)
+
 	// declare a initial variable
 	var x int = 10
 	var y float32 = 30.35
 	var age = 10
 	var isGo = true
 	var str = "Anamul"
-
+	var myName string
+	myName = "anamul"
 	a := 10
 	aa := true
 	aa = false
 	const num = 1100
-	fmt.Println(aa, x, y, age, isGo, str, num, a)
+	fmt.Println(aa, x, y, age, isGo, str, num, a, myName, aaa, baa, caa)
 	a = 100
 
 }
+
+var initial int = 15
+
+// declare multiple variable
+var a, b, c, d int = 1, 2, 3, 4
+
+const MYNAME = "Sumona"
