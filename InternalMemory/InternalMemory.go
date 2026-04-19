@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 /* Internal memory
-/1. code segment //(global function, main function, init function and all function) => always read only
+/1. code segment //(global function,  main function, init function and all function and declare a variable const keyword) => always read only
 /
 /2. data segment // global memory(global variable)
 /
