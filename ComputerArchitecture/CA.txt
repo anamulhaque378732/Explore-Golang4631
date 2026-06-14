@@ -1,0 +1,16 @@
+/*
+* Ram is an volatile memory / primary memory
+* Hard disk is a permanent memory / Secondary Memory
+* CPU - Cental processing unit [ +, -, *,  /,  &,  |,  ! ]
+* Binary operation Create by "Gottfried  leibniz"
+* Father of  Computer  "Charles Babbage"
+* Two part of CPU [
+    1. Processing unit {work :  +, -, *,  /,  &,  |,  ! }, 
+    2.register set { work : } ]
+* Father of programming "Ada Lovelace"
+* Father of computer science "Alan Turing"
+* First computer make in vacuum tube name is "ENIAC"  bye 1945
+* IC --> integrator circuit
+*
+*
+*/
