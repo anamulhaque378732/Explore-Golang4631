@@ -1,16 +1,83 @@
 /*
-* Ram is an volatile memory / primary memory
-* Hard disk is a permanent memory / Secondary Memory
+* Ram is an volatile memory / primary memory.
+* Hard disk is a permanent memory / Secondary Memory.
 * CPU - Cental processing unit [ +, -, *,  /,  &,  |,  ! ]
-* Binary operation Create by "Gottfried  leibniz"
-* Father of  Computer  "Charles Babbage"
+* Binary operation Create by "Gottfried  leibniz".
+* Father of  Computer  "Charles Babbage".
 * Two part of CPU [
     1. Processing unit {work :  +, -, *,  /,  &,  |,  ! }, 
-    2.register set { work : } ]
-* Father of programming "Ada Lovelace"
-* Father of computer science "Alan Turing"
+    2.register set { work : } ].
+* Fathers of programming "Ada Lovelace".
+* Fathers of computer science "Alan Turing".
 * First computer make in vacuum tube name is "ENIAC"  bye 1945
-* IC --> integrator circuit
+* IC --> integrator circuit.
+* Execute only processing unit.
+* first operating system name GM-NAA I/O
+* First storage , 5 MB, name "IBM 305 RAMAC" 1956
+* Fathers of  c programming "Dennis Ritchie " 1970
+* operating system create Dennis Ritchie and name of operating system "UNIX"
+*  Graphical User Interface (GUI)
+* MS-DOS (Microsoft Disk Operating System) is a foundational 16-bit, text-based operating system created by Microsoft in the early 1980s
+* Processor are two part [
+    1. Register set
+    2. Processing unit
+]
+* Processing unit are two part [
+    1. Control unit (CU)
+    2. Arithmetic Logic Unit (ALU)  {ALU:  +, -, *,  /,  &,  |,  ! }
+]
+* Part of a register set name is "Program counter"
+* when register store a instruction name of this "instruction register"
 *
+* SP --> "Stack pointer"
+* BP --> "Base pointer"
+* 8 bit computer Register = AL
+* 16 bit computer register = AX [two part AL + AH = AX]
+* 32 bit computer register = EAX []
+* 64 bit computer register = RAX
+* 
+* 8 bit computer Register = BL
+* 16 bit computer register = BX [two part BL + BH = BX]
+* 32 bit computer register = EBX []
+* 64 bit computer register = RBX
+* 
+* 8 bit computer Register = CL
+* 16 bit computer register = CX [two part CL + CH = CX]
+* 32 bit computer register = ECX []
+* 64 bit computer register = RCX
+* 
+* 8 bit computer Register = DL
+* 16 bit computer register = DX [two part DL + DH = DX]
+* 32 bit computer register = EDX []
+* 64 bit computer register = RDX
+* Others name of process  "Virtual computer"
+* 
+* 
+* 
+* 
+* 
+*  
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+*  
+* 
+* 
+*  
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
 *
 */
