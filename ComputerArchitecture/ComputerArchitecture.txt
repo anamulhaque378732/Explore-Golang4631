@@ -24,18 +24,22 @@
 ]
 * Processing unit are two part [
     1. Control unit (CU)
-    2. Arithmetic Logic Unit (ALU)  {ALU:  +, -, *,  /,  &,  |,  ! }
-]
+    2. Arithmetic Logic Unit (ALU)  {ALU:  +, -, *,  /,  &,  |,  ! }]
 * Part of a register set name is "Program counter"
 * when register store a instruction name of this "instruction register"
 *
 * SP --> "Stack pointer"
 * BP --> "Base pointer"
+*
+* AL = Accumulator Register
+* BL= Base Register
+* CL= Counter register
+* DL= Data Register
 * 8 bit computer Register = AL
 * 16 bit computer register = AX [two part AL + AH = AX]
 * 32 bit computer register = EAX []
 * 64 bit computer register = RAX
-* 
+*
 * 8 bit computer Register = BL
 * 16 bit computer register = BX [two part BL + BH = BX]
 * 32 bit computer register = EBX []
@@ -50,14 +54,11 @@
 * 16 bit computer register = DX [two part DL + DH = DX]
 * 32 bit computer register = EDX []
 * 64 bit computer register = RDX
+*
 * Others name of process  "Virtual computer"
 * 
-* 
-* 
-* 
-* 
 *  
-* 
+* ------- details in SP BP -------
 * 
 * 
 * 
@@ -79,5 +80,26 @@
 * 
 * 
 * 
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
 *
 */
