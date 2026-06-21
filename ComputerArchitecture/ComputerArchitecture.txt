@@ -31,10 +31,12 @@
 * SP --> "Stack pointer"
 * BP --> "Base pointer"
 *
+* IR = Instruction Register
 * AL = Accumulator Register
 * BL= Base Register
 * CL= Counter register
 * DL= Data Register
+*
 * 8 bit computer Register = AL
 * 16 bit computer register = AX [two part AL + AH = AX]
 * 32 bit computer register = EAX []
@@ -58,10 +60,11 @@
 * Others name of process  "Virtual computer"
 * 
 *  
-* ------- details in SP BP -------
-* 
-* 
-* 
+* ------- Details in SP BP -------
+* 8 bit computer 1st cell of ram 0, 2nd cell start 1 and so one 2,3,4,5,6,7,8,9.
+* 16 bit computer 1st cel of ram  (0,1), 2nd cell (2,3) 3rd cell (4,5).[1 cell divide 2 cell because 16 bit = 2 byte]
+* 32 bit computer 1st cel of ram  (0,1,2,3), 2nd cell (4,5,6,7) 3rd cell (8,9,10,11).[1 cell divide 4 cell because 32 bit = 4 byte]
+* 64 bit computer 1st cel of ram  (0,1,2,3,4,5,6,7), 2nd cell (8,9,10,11,12,13,14,15) 3rd cell (16,17,18,19,20,21,22,23).[1 cell divide 8 cell because 64 bit = 8 byte]
 * 
 * 
 * 
