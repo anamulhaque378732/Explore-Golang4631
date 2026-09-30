@@ -6,8 +6,12 @@ var (
 	a    int    = 10
 	name string = "anamul"
 )
+ const name2 = "anamul"
+ 
+
 
 func main() {
+
 	age := 30
 
 	if age > 18 {
