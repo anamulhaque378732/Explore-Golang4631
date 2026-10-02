@@ -9,9 +9,9 @@ var (
 // function type
 
 // 1. Standard function or named function
-// func add() {
-// 	fmt.Println(4 + 16)
-// }
+func add() {
+	fmt.Println(4 + 16)
+}
 
 // 2. Anonymous function
 
@@ -22,10 +22,10 @@ var (
 
 // 3. function expression or Assign function in variable
 
-// var addTwoNumber = func(a int, b int) {
-// 	c := a + b
-// 	fmt.Println(c)
-// }
+var addTwoNumber = func(a int, b int) {
+	c := a + b
+	fmt.Println(c)
+}
 
 // 4. Higher order function or first class function
 
@@ -35,21 +35,20 @@ var (
 
 // 8. init function - you can not call this, computer call this automatically (at first call init function then  main then global and  others function)
 
-// func init() {
-// 	fmt.Println("i am the first function that executed first")
-// 	fmt.Println(a)
-// 	a = 20
+func init() {
+	fmt.Println("i am the first function that executed first")
+	fmt.Println(a)
+	a = 20
 
-// }
+}
 
-// 9. closure-close over
+// 9. closure-close over funtion
 
 // 10. Defer function
 
 // 11. receiver function
 
 // 12. IIFE- immediately invoked function expression
-//
 
 func main() {
 	// add()
@@ -58,10 +57,10 @@ func main() {
 	// anonymous function
 	// immediately invoked function expression,IIFE
 
-	// func(a int, b int) {
-	// 	c := a + b
-	// 	fmt.Println(c)
-	// }(4, 63)
+	func(a int, b int) {
+		c := a + b
+		fmt.Println(c)
+	}(4, 63)
 
 	// addTwoNumber(4, 8)//local scope a function jdi niche thake ar call upor thaka korte parba, but global scope a kaj korbe
 

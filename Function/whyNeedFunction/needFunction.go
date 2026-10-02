@@ -4,10 +4,14 @@ import "fmt"
 
 // SOLID =
 /*
-S=Single responsibility
-O=
-
+S = Single responsibility
+O =
+L =
+I =
+D =
 */
+
+// & => ampersand
 
 func printWelcomeMessage() {
 	fmt.Println("Welcome to the application")
@@ -15,7 +19,7 @@ func printWelcomeMessage() {
 
 func getUserName() string {
 	var name string = ""
-	fmt.Println("Enter your name -")
+	fmt.Println("Enter your name - ")
 	fmt.Scanln(&name)
 	return name
 }
@@ -23,9 +27,9 @@ func getUserName() string {
 func getToNumber() (int, int) {
 	var num1 int
 	var num2 int
-	fmt.Println("Enter first number -")
-	fmt.Scanln(&num1) //&=ampersand
-	fmt.Println("Enter your second number -")
+	fmt.Println("Enter first number - ")
+	fmt.Scanln(&num1)
+	fmt.Println("Enter your second number - ")
 	fmt.Scanln(&num2)
 	return num1, num2
 }
@@ -41,25 +45,21 @@ func display(name string, sum int) {
 }
 
 func goodByeMessage() {
-	fmt.Println("thank you using the application")
+	fmt.Println("Thank you using the application")
 	fmt.Println("Good bye")
 }
 
 func main() {
-	// print welcome message
 	printWelcomeMessage()
-
-	// print user name
 	name := getUserName()
 	num1, num2 := getToNumber()
 	sum := add(num1, num2)
-
-	// display result
 	display(name, sum)
 	goodByeMessage()
 }
 
 // func main() {
+
 // 	// print welcome to the message
 
 // 	fmt.Println("Welcome to the application")
@@ -70,15 +70,12 @@ func main() {
 // 	fmt.Println("Enter your name -")
 
 // 	fmt.Scanln(&name)
-
-// 	// fmt.Println("------", name)
-
 // 	var num1 int
 // 	var num2 int
 
-// 	fmt.Println("Enter first number -")
-// 	fmt.Scanln(&num1) //&=ampersand
-// 	fmt.Println("Enter your second number -")
+// 	fmt.Println("Enter your first number - ")
+// 	fmt.Scanln(&num1)
+// 	fmt.Println("Enter your second number - ")
 // 	fmt.Scanln(&num2)
 
 // 	sum := num1 + num2
