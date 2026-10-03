@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-// SOLID =
+// SOLID  responsibility
 /*
 S = Single responsibility
 O =
