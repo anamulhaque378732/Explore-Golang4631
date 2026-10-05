@@ -2,12 +2,14 @@ package main
 
 import (
 	"fmt"
+
+	"example.com/packageScope"
 )
 
 // type of scope- 3 type of scope
 //*
 // 1. global scope
-// 2. local scope { block scope:   if, function,switch} , inside {} all are local scope
+// 2. local scope { block scope:   if, function, switch} , inside {} all are local scope
 // 3. package scope
 //
 //
@@ -25,7 +27,7 @@ func add(x int, y int) {
 	// z := x + num1 //possible , cause num1 is global scope
 	// z := num2 + num1 //possible , cause num1, num2 is global scope
 
-	// z := x + num3 //error
+	// z := x + num3 //error cause num3 is inside of main scope
 	fmt.Println(z)
 }
 
@@ -37,17 +39,17 @@ func main() {
 	var num4 = 40
 
 	add(num1, num2) //two variable are global scope
-	add(num3, num4) //two variable are main scope
-	add(num1, num3) // one variable global others main scope
-	add(num2, num3) // one variable global others main scope
-	add(num2, num4) // one variable global others main scope
+	// add(num3, num4) //two variable are main scope
+	// add(num1, num3) // one variable global others main scope
+	// add(num2, num3) // one variable global others main scope
+	// add(num2, num4) // one variable global others main scope
 
 	// add(num1, z) //one value global scope, others value global function scope, so you cannot access this value
 
 	if num3 >= 18 {
 		//p is local scope
 		p := 3
-		fmt.Println("i am matured boy i have", p, "friend") //local scope
+		fmt.Println("i am matured boy i have", p, "friends") //local scope
 	}
 
 	switch num2 {
@@ -57,10 +59,11 @@ func main() {
 
 	// other file to call
 
-	addTwoNumber(num1, num2)
+	// addTwoNumber(num1, num2)
 
-	fmt.Println("showing Custom Package")
-	// packageScope.AddSomething(4, 5)
-	// packageScope.Sum()
+	// showing custom package in other file
+
+	packageScope.AddSomething(num3, num4)
+	packageScope.Multiple(num3, num1)
 
 }
