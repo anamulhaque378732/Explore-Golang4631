@@ -26,11 +26,11 @@ func main() {
 
 	// variable declaration in a block
 	var (
-		aaa int
-		baa int    = 1
-		caa string = "Hello"
+		num1 int
+		num3 int    = 1
+		str1 string = "Hello"
 	)
-	aaaa := 25
+	num2 := 25
 	// declare a initial variable
 	var x int = 10 //integer
 	var y float32 = 30.35
@@ -44,7 +44,7 @@ func main() {
 	aa = false
 	const num = 1100
 
-	fmt.Println(aa, x, y, age, isGo, str, num, a, myName, aaa, baa, caa, aaaa)
+	fmt.Println(aa, x, y, age, isGo, str, num, a, myName, num2, num1, num3, str1)
 	a = 100
 
 }

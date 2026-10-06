@@ -9,8 +9,9 @@ var (
 // function type
 
 // 1. Standard function or named function
-func add() {
-	fmt.Println(4 + 16)
+
+func add(a int, b int) int {
+	return a + b
 }
 
 // 2. Anonymous function
@@ -18,13 +19,13 @@ func add() {
 // func(a int, b int) {
 // 	c := a + b
 // 	fmt.Println(c)
-// }(4, 6)
+// }
 
-// 3. function expression or Assign function in variable
+// 3. function expression or Assign function in a variable
 
-var addTwoNumber = func(a int, b int) {
+var addTwoNumber = func(a int, b int) int {
 	c := a + b
-	fmt.Println(c)
+	return c
 }
 
 // 4. Higher order function or first class function
@@ -33,13 +34,12 @@ var addTwoNumber = func(a int, b int) {
 
 // 6. variadic function
 
-// 8. init function - you can not call this, computer call this automatically (at first call init function then  main then global and  others function)
+// 8. init function - you can not invoked this, computer  invoked this automatically (at first  invoked init function then  main then global and  others function)
 
 func init() {
-	fmt.Println("i am the first function that executed first")
-	fmt.Println(a)
+	fmt.Println("I am the first function that is executed first")
+	fmt.Println(a) //10
 	a = 20
-
 }
 
 // 9. closure-close over funtion
@@ -48,26 +48,30 @@ func init() {
 
 // 11. receiver function
 
-// 12. IIFE- immediately invoked function expression
+// 12.  IIFE - immediately invoked function expression
+
+// func(a int, b int) {
+// 		c := a + b
+// 		fmt.Println(c)
+// 	}(4, 63)
 
 func main() {
 	// add()
 	// fmt.Println(a)
 
-	// anonymous function
-	// immediately invoked function expression,IIFE
+	// In local scope, if a function is defined below, you cannot call it from above. But in global scope, you can call a function before its declaration.
 
-	func(a int, b int) {
-		c := a + b
-		fmt.Println(c)
-	}(4, 63)
+	// // this function is not local scope bye main function, this function is global scope function
 
-	// addTwoNumber(4, 8)//local scope a function jdi niche thake ar call upor thaka korte parba, but global scope a kaj korbe
+	fmt.Println(addTwoNumber(4, 8))
 
-	var addTwoNumber = func(a int, b int) {
-		c := a + b
-		fmt.Println(c)
-	}
+	// local scope , and shadowing
+
+	// var addTwoNumber = func(a int, b int) {
+	// 	c := a + b
+	// 	fmt.Println(c)
+	// }
 
 	addTwoNumber(4, 5)
+
 }
