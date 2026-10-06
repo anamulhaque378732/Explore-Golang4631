@@ -30,6 +30,27 @@ var addTwoNumber = func(a int, b int) int {
 
 // 4. Higher order function or first class function
 
+// Higher Order function has a parameter bye a function
+
+func processOperation(a int, b int, operation func(x int, y int)) {
+	operation(a, b)
+}
+func addSomething(x int, y int) {
+	z := x + y
+	fmt.Println(z)
+}
+
+// Higher order function  return  a function
+
+func call() func(x int, y int) {
+	return multipleTwoNumbwer
+}
+
+func multipleTwoNumbwer(a int, b int) {
+	c := a * b
+	fmt.Println(c)
+}
+
 // 5. callback function
 
 // 6. variadic function
@@ -73,5 +94,10 @@ func main() {
 	// }
 
 	addTwoNumber(4, 5)
+
+	// processOperation(45, 23, addSomething)
+
+	// sum := call()
+	// sum(4, 56)
 
 }
