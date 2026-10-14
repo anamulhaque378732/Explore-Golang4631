@@ -6,6 +6,15 @@ var (
 	a = 10
 )
 
+// custome type , receiver function use
+
+type User struct { // read only. store code segment. compile time , code segment
+	Name    string // member variable or property
+	Age     int    // member variable or property
+	Country string
+	Id      int
+}
+
 // function type
 
 // 1. Standard function or named function
@@ -68,6 +77,18 @@ func init() {
 // 10. Defer function
 
 // 11. receiver function
+
+// receiver function (you can use when you create custom type)
+
+func (usr User) printDetails() {
+	fmt.Println("Name : ", usr.Name)
+	fmt.Println("Age : ", usr.Age)
+}
+
+func (usr User) call(a int) {
+	fmt.Println("Name : ", usr.Name)
+	fmt.Println(a)
+}
 
 // 12.  IIFE - immediately invoked function expression
 

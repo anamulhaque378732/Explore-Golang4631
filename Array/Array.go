@@ -6,7 +6,7 @@ import "fmt"
 
 var arrString = [5]string{"Anamul", "Sumona", "Raihan", "Nayem", "Momin"}
 
-var arrJobs = [5]string{"Developer", "Ai", "UX/UI"}
+var arrJobs = [5]string{"Developer", "Ai", "UX/UI", "data science"}
 
 func main() {
 	// declare an array
@@ -17,7 +17,7 @@ func main() {
 	arr[0] = 13
 	arr[5] = 3
 	arr[4] = 55
-
+	arr[5] = 12
 	fmt.Println(arr, arr3)
 
 	fmt.Println(arr2)
