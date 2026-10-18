@@ -64,7 +64,14 @@ func multipleTwoNumbwer(a int, b int) {
 
 // 6. variadic function
 
-// 8. init function - you can not invoked this, computer  invoked this automatically (at first  invoked init function then  main then global and  others function)
+func print(numbers ...int) {
+	fmt.Println(numbers)
+	fmt.Println(len(numbers))
+	fmt.Println(cap(numbers))
+
+}
+
+// 7. init function - you can not invoked this, computer  invoked this automatically (at first  invoked init function then  main then global and  others function)
 
 func init() {
 	fmt.Println("I am the first function that is executed first")
@@ -72,11 +79,11 @@ func init() {
 	a = 20
 }
 
-// 9. closure-close over funtion
+// 8. closure-close over funtion
 
-// 10. Defer function
+// 9. Defer function
 
-// 11. receiver function
+// 10. receiver function
 
 // receiver function (you can use when you create custom type)
 
@@ -90,7 +97,7 @@ func (usr User) call(a int) {
 	fmt.Println(a)
 }
 
-// 12.  IIFE - immediately invoked function expression
+// 11.  IIFE - immediately invoked function expression
 
 // func(a int, b int) {
 // 		c := a + b
@@ -120,5 +127,8 @@ func main() {
 
 	// sum := call()
 	// sum(4, 56)
+
+	// variadic func,   argument not matter
+	print(11, 22, 33, 44, 55, 66, 3333)
 
 }
