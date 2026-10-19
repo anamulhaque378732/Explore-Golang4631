@@ -53,10 +53,10 @@ func main() {
 
 	var slice6 []int //length = 0 , cap = 0
 
-	apend := append(slice6, 4)              //len = 1, cap = 1
-	apendd := append(slice6, 44)            //len = 1, cap = 1
-	apend2 := append(slice6, 121, 232, 343) // length = 3 , cap = 3
+	slice6 = append(slice6, 4)             //len = 1, cap = 1
+	slice6 = append(slice6, 44)            //len = 1, cap = 1
+	slice6 = append(slice6, 121, 232, 343) // length = 3 , cap = 3
 	// fmt.Println(slice6, len(slice6), cap(slice6), apend)
-	fmt.Println(slice6, apend, apendd, apend2)
+	fmt.Println(slice6)
 
 }
